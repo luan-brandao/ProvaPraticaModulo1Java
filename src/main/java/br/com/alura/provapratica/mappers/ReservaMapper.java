@@ -9,7 +9,7 @@ import org.mapstruct.Mapping;
 import java.util.List;
 
 @Mapper(componentModel = "spring")
-public interface ReservaMappers {
+public interface ReservaMapper {
 
     // Avisando o MapStruct para pegar o usuarioId do DTO e colocar no id do Usuario da Entidade
     @Mapping(source = "usuarioId", target = "usuario.id")
